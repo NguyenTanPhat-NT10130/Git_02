@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        p.a {
+          font-family: "Times New Roman", Times, serif;
+        }
+        
+        p.b {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.c {
+                font-size: 150%;
+            }
+        </style>
