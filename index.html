@@ -3,94 +3,200 @@
 <head>
     <title>Amazon Sign-In</title>
     <style>
-        p.a {
-          font-family: "Times New Roman", Times, serif;
-        }
+        h1 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+
+}
+div.h{
+    
+    display: block;
+    width: 100%;
+    height: 44px;
+    
+    background: linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+    z-index: 1;
+    content: "";
+
+}
+p.o{
+    position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1
+}
+        p::after{
+            content: "";
+        width: 25%;
+        background-color: transparent;
+        display: block;
+        height: 1px;
+        border-top: 1px solid #e7e7e7;
+        position: absolute;
+        top: 391px;
+        margin-top: -1px;
+        z-index: -1;
+}
         
+        p.f{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        p.a {
+            font-family: "Times New Roman", Times, serif;
+        }
+
         p.b {
-          font-family: Arial, Helvetica, sans-serif;
+            font-family: "Amazon Ember",Arial,sans-serif;
         }
 
         div.c {
-                font-size: x-large;
-            }
-            div.d {
-                font: size 1px;;
-            }
-            p.e {
-                font-style: normal;
-            }
-            p.thick {
-                font-weight: 900;
-            }
-
-        </style>
-        <style type="text/css">
-            h4{
-            
-            margin-top:auto;
-            margin-right:5px;
-            margin-bottom:auto;
-            margin-left:30px;
-        }
-        h3{
-            
-            margin-top:25px;
-            margin-right:5px;
-            margin-bottom:0px;
-            margin-left:30px;
+            font-size: x-large;
         }
 
-        </style>
+        div.d {
+            
+        padding-top: 5px !important;
+        padding-right: 18px !important;
+        padding-bottom: 14px !important;
+        padding-left: 18px !important;
+        }
+
+        p.e {
+            font-style: normal;
+        }
+
+        p.thick {
+            font-weight: 900;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+    <style type="text/css">
+        h4 {
+
+            margin-top: auto;
+            margin-right: 5px;
+            margin-bottom: auto;
+            margin-left: 30px;
+        }
+
+        h3 {
+
+            margin-top: 25px;
+            margin-right: 5px;
+            margin-bottom: 0px;
+            margin-left: 30px;
+        }
+
+        
+        
+    </style>
+    
 </head>
 
 <body>
-    <div style="width: 100px;margin-left:auto;margin-right: auto;margin: bottom 200px;">
+    <div class="d">
+    <div style="width: 100px;margin-left:auto;margin-right: auto;margin: bottom 300px;">
         <img width="100%" src="https://media.loveitopcdn.com/3807/logo-amazon-1.png" />
     </div>
-    <div style="width: 30%;border:  1px solid rgb(197, 191, 191) ; margin: 0 auto">
-       <h3>
-           <div class="c"><p class="b">Sign-In</p></div> 
-        </h3> 
-        <h4><p style="font-size: 13px ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"> <strong>Email or mobile phone number</strong></p></h4>
-        <div style="width: 300px;margin-left:auto;margin-right: auto;">
-        <P>
-            
-            <INPUT TYPE="TEXT" NAME="RESULT_TextField-6" 				
-			            SIZE="̀90" MAXLENGTH="30 high: 900px">
-        </p>
+    <div style="width: 25%;border:  1px solid rgb(197, 191, 191) ; margin: 0 auto;margin-top: 15px;border-radius: 4px;" >
+        <h1>
+            <!-- <div class="c"> -->
+                <p class="b" style="margin-left: 26px;">Sign-In</p>
+            <!-- </div> -->
+        </h1>
+        <div style="width: 100%;margin-left:auto;margin-right: auto;">
+            <p
+                style="font-size: 13px ;display:block; margin:auto;margin-top: 10px;margin-left: 30px;" class="f">
+                <strong>Email or mobile phone number</strong></p>
+
+
+            <INPUT TYPE="TEXT" NAME="RESULT_TextField-6"
+                style="display:block;margin:0 auto;margin-left: 30px; width: 85%;height: 30px;">
+
         </div>
-        <div style="width: 200px;margin-left:auto;margin-right: auto;">
-        <p style="width:600px">
+    
+        <!-- <div style="width: 200px;margin-left:auto;margin-right: auto;margin-top:15px">
+        
             
-            <INPUT  TYPE="button" NAME="Continue" 			
-			            VALUE="Continue" style="background-color:rgb(255, 184, 91); border-color:orange; color:black;width:200px"></p>
+            <INPUT style="display:block;margin:0 auto;padding: 0 100px;background-color:rgb(255, 184, 91); border-color:orange; color:black;text-align:center" TYPE="button" NAME="Continue" 			
+			            VALUE="Continue" >
             
-        </div>
-        <p style="margin-left:30px;font-size: 13px ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">By continuing, you agree to Amazon's <a style="color:blue ;"  href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=508088">Conditions of Use</a> and <a style="color: blue ;" href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=468496">Privacy Notioce</a>.</p>
-        <p style="margin-left:30px;color: blue;font-size: 13px ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+        </div> -->
+        <button
+            style="width: 85%; display: block; margin: 0 auto;margin-left: 30px;height: 30px;margin-top: 15px ;background-color:rgb(255, 184, 91); border-color:orange; ">Continue</button>
+        <p
+            style="margin-left:30px;font-size: 12px ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+            By continuing, you agree to Amazon's <a style="color:blue ;text-decoration: none"
+                href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=508088">Conditions
+                of Use</a> and <a style="color: blue;text-decoration: none ;"
+                href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=468496">Privacy
+                Notioce</a>.</p>
+        <!-- <p style="margin-left:30px;color: blue;font-size: 13px ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
                 Nedd help?
         
-        </p>
+        </p> -->
+        <div class="dropdown" style="margin-bottom: 40px;margin-left: 30px;">
+            <span style="color:blue;font-family: Amazon Ember,Arial,sans-serif;font-size: 13px;">Nedd help?</span>
+            <div class="dropdown-content">
+                <p><a style="color:blue"
+                        href="https://www.amazon.com/ap/forgotpassword?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&mobileBrowserWeblabTreatment=C&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2F%3FsignIn%3D1%26ref_%3Dnav_custrec_signin&prevRID=BFH6JXERDHAJJY88H4JM&openid.assoc_handle=usflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+                        Forgot your password?</a></p>
+                <p><a style="color:blue"
+                        href="https://www.amazon.com/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8">
+                        Other issues with Sign-In</a></p>
+            </div>
+        </div>
     </div>
-    <div style="width: 400px;margin-left:auto;margin-right: auto;">
-        <p style="color: grey;margin-top:30px;margin-left:130px;margin-right:10px;font-size: 12px ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-            New to Amazon?
-        </p>
-       <p style="margin-top:70px;margin-bottom:50px;margin-left:60px"> <INPUT style="width: 300px;" TYPE="button" NAME="Create your Amazon account" 			
-        VALUE="Create your Amazon account"> </p>
-        <p style="margin-top:70px;margin-bottom:50px;margin-left:30px;color: blue;font-size: 13px ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-            <a style="color:blue ;"  href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088" >
-            Conditions of Use </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a style="color:blue ;"  href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496">
-                Privacy Notoice </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:blue ;"  href="https://www.amazon.com/gp/help/customer/display.html">
-                    Help </a>
+    
+        <div style="width: 400px;margin-left:auto;margin-right: auto;">
+            <p
+                style=" z-index:-1 ;text-align: center;color: grey;margin-top:20px;margin-left:40px;margin-right:10px;font-size: 12px ;" class="f">
+                New to Amazon?
             </p>
-        
-            <p style="margin-left:25px;margin-right:10px;color: grey;font-size: 12px ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-            © 1996-2022, Amazon.com, Inc. or its affiliates
-            </p>
-    </div>
+            <button style="margin-top:1px;margin-bottom:1px;margin-left:60px;height: 5%; padding: 0 60px">Create your Amazon account</button>
+            </div>
+           <div style ="line-height:70px;margin-top: 10px;background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);display: block;height: 44px;">
+                <div style="width: 500px;margin-bottom: -10px;margin-left:auto;margin-right: auto;">
+                            
+                            <p
+                                style="margin-top:30px;margin-bottom:-18px;margin-left:30px;color: blue;font-size: 12px ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                                <a style="color:blue ;text-decoration: none;margin-left: 90px;"
+                                    href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088">
+                                    Conditions of Use </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a style="color:blue ;text-decoration: none"
+                                    href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496">
+                                    Privacy Notoice </a  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:blue ;text-decoration: none"
+                                    href="https://www.amazon.com/gp/help/customer/display.html">
+                                    Help </a>
+                            
 
+                                <br>
+                                <a style="line-height: 0!important;margin-top:10%;margin-left:100px;margin-right:10px;color: grey;font-size: 12px ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                                    © 1996-2022, Amazon.com, Inc. or its affiliates</a> 
+                                
+                            </p>
+                        </div>
+           </div>
+            
+    </div>
 </body>
 
 </html>
